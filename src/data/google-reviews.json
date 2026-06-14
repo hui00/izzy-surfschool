@@ -1,40 +1,45 @@
 {
   "source": "Google Maps",
-  "placeId": "",
-  "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Izzy%20Surf%20School%20Lombok%20Kabupaten%20Lombok%20Barat",
+  "placeId": "ChIJx74ex73pzS0RpezWDyZxn_Q",
+  "googleMapsUri": "https://maps.google.com/?cid=17626931874839850149&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
   "rating": 5,
   "reviewCount": 57,
-  "updatedAt": "2026-06-14T00:00:00.000Z",
+  "updatedAt": "2026-06-14T12:50:22.132Z",
   "reviews": [
+    {
+      "author": "Alex Bloomfield",
+      "rating": 5,
+      "date": "7 months ago",
+      "text": "I had the privilege of being taught to surf by Yus. I did two lessons with him over a week. I started the week not knowing how to surf to being able to catch the waves on my own. Yus was very calm, great at explaining things and also very fun to be around. I felt no time pressure with him. He was just happy to enjoy that waves with me. If you want a 1 to 1 surf lesson at a very reasonable price he is definitely the guy to see. It was great surfing with you Yus. Thank you.",
+      "uri": "https://www.google.com/maps/contrib/100779836394842884835/reviews"
+    },
     {
       "author": "Sven Muthke",
       "rating": 5,
-      "date": "Google review, one month ago",
-      "text": "Yus is a very passionate and phenomenal surf teacher."
-    },
-    {
-      "author": "Ava mk",
-      "rating": 5,
-      "date": "Google review, five months ago",
-      "text": "Yus is a great teacher, very patient and attentive."
+      "date": "a month ago",
+      "text": "We have been on Lombok in April 2026 and had the chance to get Surf lessons from Yus. He is a very passionate and phenomenal Surf teacher. Both my dauthers and I managed to surf the first waves and we enjoyed it a lot. Thanks for the good time Yus!!! We can highly recommend Izzy Surf School",
+      "uri": "https://www.google.com/maps/contrib/106376038198784212123/reviews"
     },
     {
       "author": "Maryna Chernova",
       "rating": 5,
-      "date": "Google review, five months ago",
-      "text": "He adapted everything perfectly for both of us."
+      "date": "5 months ago",
+      "text": "We had an amazing time with Yus (Yuskaneil)! I’m an intermediate surfer and my boyfriend is a beginner, and he adapted everything perfectly for both of us. His tips were spot on, he’s super professional yet very relaxed, and we felt very safe in the water, and at ease straight away.\n\nHe also organised our trip to the Gili Islands, which was fantastic.\nI’ll definitely be coming back to Yus — thank you!",
+      "uri": "https://www.google.com/maps/contrib/114196439481098334136/reviews"
     },
     {
-      "author": "Erin Kearns",
+      "author": "Chloe",
       "rating": 5,
-      "date": "Google review, one month ago",
-      "text": "We honestly had the best time ever."
+      "date": "a month ago",
+      "text": "My boyfriend and I spent the morning learning to surf with Yus and it was super fun! 100% recommend this surf school, Yus was very friendly and his teaching was super helpful!! It was also such a cool experience as there were so many turtles nearby that would pop up next to our board!",
+      "uri": "https://www.google.com/maps/contrib/105210766100674697503/reviews"
     },
     {
-      "author": "Katie Anjum",
+      "author": "Jian Guo",
       "rating": 5,
-      "date": "Google review, one month ago",
-      "text": "Best experience ever learning to surf with Yus."
+      "date": "8 months ago",
+      "text": "Please please try surfing if you are a beginner and want to do something new beyond chilling in the hotel. Had to share about my surf coach in Lombok! 🏄‍♂️ Met Yus from Izzy Surf and he was absolutely legendary. He made everything click—super clear instructions, super patient, and just makes you feel safe in the water. He stayed in the water with me the whole time! If you're thinking about learning, just go see Yus. 10/10 for beginners! 🙌 We even saw sea turtles on our second visit. Give it a try！",
+      "uri": "https://www.google.com/maps/contrib/112712534704010781142/reviews"
     }
   ]
 }
