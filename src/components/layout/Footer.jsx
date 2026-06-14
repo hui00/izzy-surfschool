@@ -9,10 +9,10 @@ const Footer = () => {
 
   const quickLinks = [
     { key: "footer.home", href: "#home" },
+    { key: "footer.about", href: "#about" },
     { key: "footer.surfCourses", href: "#surf" },
     { key: "footer.reviews", href: "#reviews" },
     { key: "footer.gallery", href: "#gallery" },
-    { key: "footer.about", href: "#about" },
     { key: "footer.contact", href: "#contact" },
   ];
 

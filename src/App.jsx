@@ -17,8 +17,8 @@ function App() {
 
       <main className="flex-grow">
         <Hero />
-        <SurfSection />
         <AboutSection />
+        <SurfSection />
         <TestimonialsSection />
         <GallerySection />
         <ContactSection />

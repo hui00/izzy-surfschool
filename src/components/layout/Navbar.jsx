@@ -28,10 +28,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: t('navbar.home'), href: "#home" },
+    { name: t('navbar.about'), href: "#about" },
     { name: t('navbar.surf'), href: "#surf" },
     { name: t('navbar.reviews'), href: "#reviews" },
     { name: t('navbar.gallery'), href: "#gallery" },
-    { name: t('navbar.about'), href: "#about" },
   ];
 
   const changeLanguage = (lng) => {
