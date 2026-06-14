@@ -1,16 +1,18 @@
 import React from "react";
-import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { PHONE_DISPLAY } from "@/lib/contact";
 
 const Footer = () => {
   const { t } = useTranslation();
   const year = new Date().getFullYear();
 
   const quickLinks = [
-    { key: "footer.home", href: "#accueil" },
+    { key: "footer.home", href: "#home" },
     { key: "footer.surfCourses", href: "#surf" },
-    { key: "footer.pricing", href: "#tarifs" },
-    { key: "footer.about", href: "#a-propos" },
+    { key: "footer.pricing", href: "#pricing" },
+    { key: "footer.reviews", href: "#reviews" },
+    { key: "footer.about", href: "#about" },
     { key: "footer.contact", href: "#contact" },
   ];
 
@@ -56,7 +58,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-blue-300" />
-                <span className="text-blue-100">+62 81917018103</span>
+                <span className="text-blue-100">{PHONE_DISPLAY}</span>
               </div>
             </div>
           </div>

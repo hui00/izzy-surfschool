@@ -33,7 +33,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="a-propos" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-white overflow-hidden">
       <div className="container-custom">
         <div className="text-center mb-12">
           <motion.h2 
@@ -77,7 +77,7 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="absolute -bottom-6 -right-6 bg-gradient-to-r from-primary to-blue-400 text-white p-4 rounded-lg shadow-lg flex items-center gap-2"
+                className="absolute bottom-3 right-3 md:-bottom-6 md:-right-6 bg-gradient-to-r from-primary to-blue-400 text-white p-4 rounded-lg shadow-lg flex items-center gap-2"
               >
                 <Award className="h-6 w-6"/>
                 <p className="font-bold text-lg">{t('aboutSection.experienceYears')}</p>

@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="section-padding bg-gradient-to-b from-white to-blue-50 flex justify-center p-4">
+    <section id="reviews" className="section-padding bg-gradient-to-b from-white to-blue-50 flex justify-center p-4">
       <div className="container-custom">
         <div className="text-center mb-12">
           <motion.h2 
