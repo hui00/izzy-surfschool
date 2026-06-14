@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Award, CheckCircle2, Clock, Send, Users, Waves } from "lucide-react";
+import { Award, CheckCircle2, Clock, MapPin, Send, Users, Waves } from "lucide-react";
 import { useTranslation, Trans } from 'react-i18next';
 import surfActionImage from "@/media_carousel/surf_action_2.jpg";
 import surfSessionVideo from "@/media_carousel/surf_session_1.mp4";
@@ -32,6 +32,24 @@ const SurfSection = () => {
     "surfSection.levelBeginner",
     "surfSection.levelIntermediate",
     "surfSection.levelAdvanced",
+  ];
+
+  const areaNotes = [
+    {
+      icon: <MapPin className="h-5 w-5 text-primary" />,
+      titleKey: "surfSection.areaAlangTitle",
+      descriptionKey: "surfSection.areaAlangDesc",
+    },
+    {
+      icon: <Waves className="h-5 w-5 text-primary" />,
+      titleKey: "surfSection.areaWavesTitle",
+      descriptionKey: "surfSection.areaWavesDesc",
+    },
+    {
+      icon: <Users className="h-5 w-5 text-primary" />,
+      titleKey: "surfSection.areaCrowdsTitle",
+      descriptionKey: "surfSection.areaCrowdsDesc",
+    },
   ];
 
   const itemVariants = {
@@ -140,6 +158,38 @@ const SurfSection = () => {
                   <p className="text-sm text-blue-100 mt-2">{t('surfSection.mediaDesc')}</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-8 rounded-lg bg-white p-6 md:p-8 shadow-md"
+        >
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-primary">
+                {t('surfSection.areaLabel')}
+              </p>
+              <h3 className="mt-2 text-2xl md:text-3xl font-bold">
+                {t('surfSection.areaTitle')}
+              </h3>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                {t('surfSection.areaIntro')}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              {areaNotes.map((note) => (
+                <div key={note.titleKey} className="rounded-md border border-blue-100 bg-blue-50/60 p-4">
+                  <div className="mb-3">{note.icon}</div>
+                  <p className="font-semibold mb-1">{t(note.titleKey)}</p>
+                  <p className="text-sm text-gray-600">{t(note.descriptionKey)}</p>
+                </div>
+              ))}
             </div>
           </div>
         </motion.div>
