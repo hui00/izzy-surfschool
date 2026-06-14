@@ -29,8 +29,8 @@ const Navbar = () => {
   const navLinks = [
     { name: t('navbar.home'), href: "#home" },
     { name: t('navbar.surf'), href: "#surf" },
-    { name: t('navbar.pricing'), href: "#pricing" },
     { name: t('navbar.reviews'), href: "#reviews" },
+    { name: t('navbar.gallery'), href: "#gallery" },
     { name: t('navbar.about'), href: "#about" },
   ];
 
@@ -47,49 +47,56 @@ const Navbar = () => {
     setMobileMenuOpen(false);
   };
 
-  const navLinkClass = cn(
-    "relative transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:transition-all after:duration-300 hover:after:w-full",
-    isScrolled
-      ? "text-foreground hover:text-primary after:bg-primary"
-      : "text-white hover:text-blue-100 after:bg-white"
-  );
-
-  const iconButtonClass = cn(
-    isScrolled ? "text-foreground" : "text-white hover:bg-white/10 hover:text-white"
-  );
+  // Text is light over the dark hero, dark once the solid bar appears.
+  const onLight = isScrolled || mobileMenuOpen;
 
   return (
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-md py-2"
-          : "bg-transparent py-4"
+        onLight
+          ? "bg-white/90 backdrop-blur-md shadow-sm py-3"
+          : "bg-transparent py-5"
       )}
     >
-      
       <div className="container-custom flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2">
+        <a href="#home" className="flex items-center gap-2.5">
           <img
-          src="Logo_and_background/logo4.png"
-          alt="Logo"
-          className="w-8 h-8"
+            src="Logo_and_background/logo4.png"
+            alt="Izzy Surf School logo"
+            className="h-10 w-10 object-contain"
           />
-          <span className={cn("text-xl font-bold", isScrolled ? "text-gradient" : "text-white")}>
+          <span className={cn(
+            "text-lg font-display font-bold tracking-tight transition-colors",
+            onLight ? "text-foreground" : "text-white drop-shadow"
+          )}>
             Izzy Surf School
           </span>
         </a>
 
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center gap-7">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className={navLinkClass}>
+            <a
+              key={link.name}
+              href={link.href}
+              className={cn(
+                "nav-link",
+                onLight ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              )}
+            >
               {link.name}
             </a>
           ))}
-          <Button className="bg-gradient-ocean" onClick={scrollToContact}>{t('navbar.contact')}</Button>
+          <Button className="bg-gradient-ocean shadow-md shadow-primary/30 hover:opacity-90" onClick={scrollToContact}>
+            {t('navbar.contact')}
+          </Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className={iconButtonClass}>
+              <Button
+                variant="ghost"
+                size="icon"
+                className={onLight ? "" : "text-white hover:bg-white/20 hover:text-white"}
+              >
                 <Globe className="h-5 w-5" />
               </Button>
             </DropdownMenuTrigger>
@@ -105,9 +112,13 @@ const Navbar = () => {
         </nav>
 
         <div className="md:hidden flex items-center">
-           <DropdownMenu>
+          <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className={cn("mr-2", iconButtonClass)}>
+              <Button
+                variant="ghost"
+                size="icon"
+                className={cn("mr-1", onLight ? "" : "text-white hover:bg-white/20 hover:text-white")}
+              >
                 <Globe className="h-5 w-5" />
               </Button>
             </DropdownMenuTrigger>
@@ -123,14 +134,10 @@ const Navbar = () => {
           <Button
             variant="ghost"
             size="icon"
-            className={iconButtonClass}
+            className={onLight ? "" : "text-white hover:bg-white/20 hover:text-white"}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
       </div>
@@ -141,20 +148,22 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white"
+            className="md:hidden overflow-hidden bg-white border-t border-border"
           >
-            <div className="container-custom py-4 flex flex-col space-y-4">
+            <div className="container-custom py-4 flex flex-col space-y-1">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-foreground hover:text-primary py-2 transition-colors"
+                  className="rounded-lg px-3 py-2.5 font-medium text-foreground transition-colors hover:bg-muted hover:text-primary"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
-              <Button className="bg-gradient-ocean w-full" onClick={scrollToContact}>{t('navbar.contact')}</Button>
+              <Button className="bg-gradient-ocean w-full mt-2" onClick={scrollToContact}>
+                {t('navbar.contact')}
+              </Button>
             </div>
           </motion.div>
         )}
