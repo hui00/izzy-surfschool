@@ -1,0 +1,40 @@
+{
+  "source": "Google Maps",
+  "placeId": "",
+  "googleMapsUri": "https://www.google.com/maps/search/?api=1&query=Izzy%20Surf%20School%20Lombok%20Kabupaten%20Lombok%20Barat",
+  "rating": 5,
+  "reviewCount": 57,
+  "updatedAt": "2026-06-14T00:00:00.000Z",
+  "reviews": [
+    {
+      "author": "Sven Muthke",
+      "rating": 5,
+      "date": "Google review, one month ago",
+      "text": "Yus is a very passionate and phenomenal surf teacher."
+    },
+    {
+      "author": "Ava mk",
+      "rating": 5,
+      "date": "Google review, five months ago",
+      "text": "Yus is a great teacher, very patient and attentive."
+    },
+    {
+      "author": "Maryna Chernova",
+      "rating": 5,
+      "date": "Google review, five months ago",
+      "text": "He adapted everything perfectly for both of us."
+    },
+    {
+      "author": "Erin Kearns",
+      "rating": 5,
+      "date": "Google review, one month ago",
+      "text": "We honestly had the best time ever."
+    },
+    {
+      "author": "Katie Anjum",
+      "rating": 5,
+      "date": "Google review, one month ago",
+      "text": "Best experience ever learning to surf with Yus."
+    }
+  ]
+}

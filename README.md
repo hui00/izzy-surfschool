@@ -31,4 +31,29 @@ To enable hosting:
 5. Push to the `main` branch.
 
 GitHub will run `npm ci`, build the site with `npm run build`, and publish `dist/`.
-# izzy-surfschool
+
+## Google reviews refresh
+
+The site reads review data from `src/data/google-reviews.json`.
+
+To refresh that file automatically, add this GitHub repository secret:
+
+```text
+GOOGLE_MAPS_API_KEY
+```
+
+Optional repository variable:
+
+```text
+GOOGLE_PLACE_ID
+```
+
+If `GOOGLE_PLACE_ID` is not set, the updater searches for `Izzy Surf School Lombok Kabupaten Lombok Barat` and uses the first Google Places result.
+
+Run manually:
+
+```bash
+GOOGLE_MAPS_API_KEY=your_key npm run reviews:update
+```
+
+GitHub Actions also runs `.github/workflows/update-google-reviews.yml` every Monday. When Google returns changed review data, the workflow commits `src/data/google-reviews.json`, which triggers the normal Pages deploy.
