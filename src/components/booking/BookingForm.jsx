@@ -160,10 +160,6 @@ const BookingForm = ({ isOpen, onClose }) => {
               <SelectOption value="surf-debutant">{t('bookingForm.surfBeginner')}</SelectOption>
               <SelectOption value="surf-intermediaire">{t('bookingForm.surfIntermediate')}</SelectOption>
               <SelectOption value="surf-avance">{t('bookingForm.surfAdvanced')}</SelectOption>
-              <SelectOption value="snorkeling-recifs">{t('bookingForm.snorkelReefs')}</SelectOption>
-              <SelectOption value="snorkeling-tortues">{t('bookingForm.snorkelTurtles')}</SelectOption>
-              <SelectOption value="snorkeling-epaves">{t('bookingForm.snorkelWrecks')}</SelectOption>
-              <SelectOption value="pack-decouverte">{t('bookingForm.discoveryPack')}</SelectOption>
             </Select>
           </div>
           

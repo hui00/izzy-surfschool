@@ -30,42 +30,8 @@ const PricingSection = () => {
         "pricingSection.featureAnalisys",
         "pricingSection.featureHappyMood",
       ],
-      popular: false,
-      color: "from-blue-500 to-cyan-400"
-    },
-    {
-      titleKey: "pricingSection.discoveryPack",
-      descriptionKey: "pricingSection.discoveryPackDesc",
-      price: "850,000",
-      currency: "IDR",
-      durationKey: "pricingSection.priceUnitPerson",
-      featuresKeys: [
-        "pricingSection.featureSurfCourse1x",
-        "pricingSection.featureSnorkelingTour1x",
-        "pricingSection.featureEquipmentFull",
-        "pricingSection.featureLunchDrinks",
-        "pricingSection.featureTransport",
-        "pricingSection.featurePhotosVideos"
-      ],
       popular: true,
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      titleKey: "pricingSection.snorkelingTour",
-      descriptionKey: "pricingSection.snorkelingTourDesc",
-      price: "400,000",
-      currency: "IDR",
-      durationKey: "pricingSection.priceUnitTour",
-      featuresKeys: [
-        "pricingSection.featureEquipmentSnorkel",
-        "pricingSection.featureGuide",
-        "pricingSection.featureTourDuration3h",
-        "pricingSection.featureSpotsVisit",
-        "pricingSection.featureDrinksSnacks",
-        "pricingSection.featureUnderwaterPhotos"
-      ],
-      popular: false,
-      color: "from-teal-500 to-green-400"
+      color: "from-blue-500 to-cyan-400"
     }
   ];
 
@@ -95,7 +61,7 @@ const PricingSection = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 max-w-md mx-auto gap-8">
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={index}

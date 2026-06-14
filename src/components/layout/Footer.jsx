@@ -9,7 +9,6 @@ const Footer = () => {
   const quickLinks = [
     { key: "footer.home", href: "#accueil" },
     { key: "footer.surfCourses", href: "#surf" },
-    { key: "footer.snorkelingTours", href: "#snorkeling" },
     { key: "footer.pricing", href: "#tarifs" },
     { key: "footer.about", href: "#a-propos" },
     { key: "footer.contact", href: "#contact" },

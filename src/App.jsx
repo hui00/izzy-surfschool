@@ -4,7 +4,6 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import SurfSection from "@/components/sections/SurfSection";
-import SnorkelingSection from "@/components/sections/SnorkelingSection";
 import AboutSection from "@/components/sections/AboutSection";
 import PricingSection from "@/components/sections/PricingSection";
 import ContactSection from "@/components/sections/ContactSection";
@@ -19,7 +18,6 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <SurfSection />
-        <SnorkelingSection />
         <AboutSection />
         <PricingSection />
         {/* Le temps d'avoir une page avec des revues google

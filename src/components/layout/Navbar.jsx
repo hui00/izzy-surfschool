@@ -29,7 +29,6 @@ const Navbar = () => {
   const navLinks = [
     { name: t('navbar.home'), href: "#accueil" },
     { name: t('navbar.surf'), href: "#surf" },
-    { name: t('navbar.snorkeling'), href: "#snorkeling" },
     { name: t('navbar.about'), href: "#a-propos" },
     { name: t('navbar.pricing'), href: "#tarifs" },
   ];
