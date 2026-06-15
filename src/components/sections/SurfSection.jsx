@@ -12,15 +12,11 @@ const SurfSection = () => {
     {
       icon: User,
       titleKey: "surfSection.privateTitle",
-      priceKey: "surfSection.privatePrice",
-      unitKey: "surfSection.privateUnit",
       descriptionKey: "surfSection.privateDesc",
     },
     {
       icon: Users,
       titleKey: "surfSection.groupTitle",
-      priceKey: "surfSection.groupPrice",
-      unitKey: "surfSection.groupUnit",
       descriptionKey: "surfSection.groupDesc",
     },
   ];
@@ -95,8 +91,8 @@ const SurfSection = () => {
                 ))}
               </div>
 
-              <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {lessonTypes.map(({ icon: Icon, titleKey, priceKey, unitKey, descriptionKey }, index) => (
+              <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {lessonTypes.map(({ icon: Icon, titleKey, descriptionKey }, index) => (
                   <motion.div
                     key={titleKey}
                     variants={itemVariants}
@@ -110,16 +106,10 @@ const SurfSection = () => {
                       <Icon className="h-5 w-5" />
                     </span>
                     <p className="font-semibold">{t(titleKey)}</p>
-                    <p className="mt-1 mb-2 flex items-baseline gap-1">
-                      <span className="text-2xl font-bold text-foreground">{t(priceKey)}</span>
-                      <span className="text-sm text-muted-foreground">{t(unitKey)}</span>
-                    </p>
-                    <p className="text-sm text-muted-foreground">{t(descriptionKey)}</p>
+                    <p className="mt-1 text-sm text-muted-foreground">{t(descriptionKey)}</p>
                   </motion.div>
                 ))}
               </div>
-
-              <p className="mb-8 text-sm text-muted-foreground">{t('surfSection.priceNote')}</p>
 
               <Button asChild size="lg" className="bg-green-500 text-white hover:bg-green-600">
                 <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer">
