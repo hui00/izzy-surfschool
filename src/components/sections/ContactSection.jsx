@@ -5,7 +5,7 @@ import { Clock, ExternalLink, Instagram, MapPin, MessageCircle, Phone } from "lu
 import { useTranslation, Trans } from 'react-i18next';
 import { PHONE_DISPLAY, whatsappUrl } from "@/lib/contact";
 
-const MAP_ADDRESS = "Jalan Raya Mangsit, Senggigi, Kec. Batu Layar, Kabupaten Lombok Barat, Nusa Tenggara Bar. 83355";
+const MAP_ADDRESS = "G2CQ+247, Senggigi, Batu Layar, West Lombok Regency, West Nusa Tenggara 83355, Indonesia";
 const MAP_QUERY = encodeURIComponent(MAP_ADDRESS);
 const MAP_EMBED_URL = `https://www.google.com/maps?q=${MAP_QUERY}&z=16&output=embed`;
 const MAP_LINK_URL = `https://www.google.com/maps/search/?api=1&query=${MAP_QUERY}`;
