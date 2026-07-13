@@ -64,7 +64,7 @@ const Navbar = () => {
           <img
             src="Logo_and_background/logo4.png"
             alt="Izzy Surf School logo"
-            className="h-10 w-10 object-contain"
+            className="h-10 w-10 rounded-full object-cover ring-1 ring-white/70"
           />
           <span className={cn(
             "text-lg font-display font-bold tracking-tight transition-colors",

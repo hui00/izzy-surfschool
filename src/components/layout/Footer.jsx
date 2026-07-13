@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <img src="Logo_and_background/logo4.png" alt="Izzy Surf School logo" className="h-12 w-12 object-contain" />
+              <img src="Logo_and_background/logo4.png" alt="Izzy Surf School logo" className="h-12 w-12 rounded-full object-cover ring-1 ring-white/20" />
               <span className="font-display text-xl font-bold text-white">Izzy Surf School</span>
             </div>
             <p className="mb-5 max-w-xs text-sm text-slate-400">{t('footer.tagline')}</p>
