@@ -62,7 +62,7 @@ const Navbar = () => {
       <div className="container-custom flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2.5">
           <img
-            src="Logo_and_background/logo4.png"
+            src="Logo_and_background/logo5.png"
             alt="Izzy Surf School logo"
             className="h-10 w-10 rounded-full object-cover ring-1 ring-white/70"
           />
